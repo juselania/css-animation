@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap');
+
+:root {
+  --main-part-color: black; 
+ 
+}
+
+body{
+  background-image: linear-gradient(to right, red , yellow);
+  font-family: "Tajawal", Arial;
+}/*to right, rgba(255,0,0,0), rgba(255,0,0,1)*/
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+a{
+	color: black;
+	text-decoration: none;
+	text-decoration-line: none;
+}
+#imagem{
+	text-align: center;
+}
+h3{
+  text-align: center;
+}
+.box{
+	margin: auto;
+	height: 500px;
+	width: 500px;
+	position: relative;
+	display: block;
+	margin-top: 5%;
+}
+.head{
+	height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+.lefteye{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border: solid var(--main-part-color) 10px;
+	border-color: var(--main-part-color) transparent transparent transparent;
+	top: 35%;
+	left: 20%;
+	animation-name: lefteyewink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.righteye{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	border: solid var(--main-part-color) 10px;
+	border-color: var(--main-part-color) transparent transparent transparent;
+	top: 35%;
+	left: 60%;
+	animation-name: righteyewink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.mouth{
+	position: absolute;
+	height: 0px;
+	width: 300px;
+	border: solid var(--main-part-color) 10px;
+    border-radius: 0 0 50% 50%;
+	border-color: transparent transparent var(--main-part-color) transparent;
+	top: 70%;
+	left: 20%;
+	animation-name: smile;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes lefteyewink {
+	0% {
+		height: 0px;
+		width: 100px;
+		border: solid var(--main-part-color) 10px;
+	    border-color: var(--main-part-color) transparent transparent transparent;
+		top: 35%;
+		left: 20%;
+	}
+	33% {
+		height: 100px;
+		width: 50px;
+		border: solid var(--main-part-color) 5px;
+		background-color: var(--main-part-color);
+		border-color: var(--main-part-color) transparent transparent transparent;
+		border-radius: 50%;
+		top: 30%;
+		left: 25%;
+	}
+	66%{
+		height: 100px;
+		width: 100px;
+		border: solid var(--main-part-color) 10px;
+		border-radius: 50% 50% 0 0;
+		background-color: transparent;
+		border-color: var(--main-part-color) transparent transparent transparent;
+		top: 35%;
+		left: 20%;
+	}
+	100%{
+		height: 100px;
+		width: 100px;
+		border: solid var(--main-part-color) 10px;
+		background-color: transparent;
+		border-radius: 50% 50% 0 0;
+		border-color: var(--main-part-color) transparent transparent transparent;
+		top: 35%;
+		left: 20%;
+	}
+}
+
+@keyframes righteyewink {
+	0% {
+		height: 0px;
+		width: 100px;
+		border: solid var(--main-part-color) 10px;
+		border-color: var(--main-part-color) transparent transparent transparent;
+		top: 35%;
+		left: 60%;
+	}
+	33% {
+		height: 100px;
+		width: 50px;
+		border: solid var(--main-part-color) 5px;
+		background-color: var(--main-part-color);
+		border-color: var(--main-part-color) transparent transparent transparent;
+		border-radius: 50%;
+		top: 30%;
+		left: 65%;
+	}
+	100% {
+		height: 100px;
+		width: 50px;
+		border: solid var(--main-part-color) 5px;
+		background-color: var(--main-part-color);
+		border-color: var(--main-part-color) transparent transparent transparent;
+		border-radius: 50%;
+		top: 30%;
+		left: 65%;
+	}
+}
+
+@keyframes smile {
+	0% {
+		height: 0px;
+		top: 70%;
+	}
+	33% {
+		height: 150px;
+		top: 45%;
+	}
+	66% {
+		height: 150px;
+		top: 45%;
+	}
+	100% {
+		height: 150px;
+		top: 45%;
+	}
+}
